@@ -1,6 +1,6 @@
 {
   "sidebar": {
-    "title": "Modulos",
+    "title": "WA!",
     "index": "Inicio",
     "reception": "Recepción",
     "inventories": "Inventarios",
@@ -14,10 +14,10 @@
   "modules": {
     "picking": {
       "title-page": "Despachos",
-      "title-search-so": "Buscar Orden de Venta",
-      "title-info-so": "Información de la Orden de Venta",
+      "title-search-so": "Buscar Pedido",
+      "title-info-so": "Información del pedido",
       "title-list-pickings": "Listado de despachos",
-      "title-indicators-picking": "Inicadores de despacho",
+      "title-indicators-picking": "Indicadores de despacho",
       "btn": {
         "search-so": "Buscar",
         "clean-info-so-searched": "Limpiar",
@@ -38,7 +38,7 @@
         "Id Picking",
         "Despachado",
         "Responsable",
-        "Cración"
+        "Creación"
       ]
     }
   }

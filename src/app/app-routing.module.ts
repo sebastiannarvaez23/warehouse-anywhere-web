@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PickingComponent } from './picking/pages/picking/main-page.component';
 
 const routes: Routes = [
   {
-    path: 'pickings',
-    component: PickingComponent
-  }
+    path: 'security',
+    loadChildren: () =>
+      import('./feature/security/security.module')
+        .then(m => m.SecurityModule),
+  },
+  {
+    path: 'warehouse',
+    loadChildren: () =>
+      import('./feature/warehouse/warehouse.module')
+        .then(m => m.WarehouseModule),
+  },
 ];
 
 @NgModule({

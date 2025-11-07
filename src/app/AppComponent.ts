@@ -5,9 +5,7 @@ import { TranslateService } from '@ngx-translate/core';
   selector: 'app-root',
   template: `
   <div class="contain-app">
-    <app-sidebar>
-        <app-picking></app-picking>
-    </app-sidebar>
+    <router-outlet></router-outlet>
   </div>`,
   styleUrls: ['./app.component.css'],
 })

@@ -7,10 +7,11 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-import { SharedModule } from './shared/shared.module';
-import { PickingModule } from './picking/picking.module';
+import { WarehouseModule } from './feature/warehouse/warehouse.module';
 import { AppComponent } from './AppComponent';
 import { AppRoutingModule } from './app-routing.module';
+import { CoreModule } from './core/core.module';
+import { SecurityModule } from './feature/security/security.module';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,20 +22,20 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
   ],
   imports: [
-    FormsModule,
-    BrowserModule,
     AppRoutingModule,
-    CommonModule,
-    HttpClientModule,
     BrowserAnimationsModule,
-    SharedModule,
-    PickingModule,
+    BrowserModule,
+    CommonModule,
+    CoreModule,
+    FormsModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient],
       },
+      defaultLanguage: 'es'
     })
   ],
   providers: [],
