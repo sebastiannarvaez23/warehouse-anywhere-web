@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from '@angular/router';
+
 import { PickingPageComponent } from "./picking/pages/picking/picking-page.component";
 import { LayoutPageComponent } from "src/app/core/components/layout-page/layout-page.component";
 

@@ -1,21 +1,61 @@
-.text {
-  font-size: 26px;
-  font-weight: 600;
-  padding-left: 70px;
+.home-section {
+  background: var(--very-like);
+  height: 100vh;
+  width: 100%;
 }
 
-.info-saleorder {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  width: 95%;
-  position: absolute;
-  margin-top: 40px;
+.home-section .home-content {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.info-picking {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 95%;
+.home-section .home-content .bx-menu,
+.home-section .home-content .text {
+  color: var(--primary-color);
+  font-size: 35px;
+}
+
+.home-section .home-content .bx-menu {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .sidebar.close .nav-links li .sub-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1700px) {
+  .home-section {
+    margin: 0 auto;
+  }
+}
+
+.footer {
   position: absolute;
-  margin-top: 38vh;
+  right: 0;
+  bottom: 0;
+  margin-right: 5%;
+  color: rgb(135, 148, 148);
+}
+
+/* ----------------- */
+
+.contain-form {
+  width: 300px;
+  margin: 80px 100px;
+}
+
+.options {
+  text-align: center;
+  margin: 16px;
+}
+
+.options button {
+  padding: 12px 40px;
+  margin-bottom: 8px;
 }

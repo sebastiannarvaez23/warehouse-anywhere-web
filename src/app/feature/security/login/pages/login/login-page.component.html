@@ -1,1 +1,24 @@
-<h1>Este es un login</h1>
+<section class="home-section">
+    <div class="home-content">
+
+
+        <app-card-primary class="container-login">
+            <div class="contain-form">
+                <h5>Warehouse Anywhere</h5>
+                <h1>Login</h1>
+                <app-input-wa [label]="'security.login.form.user' | translate" />
+                <app-input-wa [label]="'security.login.form.ps' | translate" />
+                <div class="options">
+                    <button class="btn-normal" routerLink="/warehouse/picking">
+                        Login
+                    </button>
+                    <br>
+                    <a href="">{{ 'security.login.form.register' | translate }}</a>
+                </div>
+            </div>
+        </app-card-primary>
+
+
+        <p class="footer">Derechos reservados - Warehouse Anywhere® v 1.0</p>
+    </div>
+</section>

@@ -11,6 +11,15 @@
     "analytics": "Analíticas",
     "settings": "Configuraciones"
   },
+  "security": {
+    "login": {
+      "form": {
+        "user": "Usuario",
+        "ps": "Contraseña",
+        "register": "Registrarse"
+      }
+    }
+  },
   "modules": {
     "picking": {
       "title-page": "Despachos",
